@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_animations/screens/home_screen.dart';
+import 'package:flutter_animations/screens/implicit-animations/crossfade_animation.dart';
+import 'package:flutter_animations/screens/implicit-animations/opacity_animation.dart';
+import 'package:flutter_animations/screens/implicit-animations/size_animation.dart';
+import 'package:flutter_animations/screens/implicit-animations/visibility_animation.dart';
 import 'package:flutter_animations/screens/implicit_animations.dart';
 import 'package:flutter_animations/screens/tween_animations.dart';
 
@@ -22,6 +26,10 @@ class MyApp extends StatelessWidget {
       routes: {
         'implicit': (context) => const ImplicitAnimations(),
         'tween': (context) => const TweenAnimation(),
+        'opacity': (context) => const OpacityAnimation(),
+        'size': (context) => const SizeAnimation(),
+        'crossfade': (context) => const CrossFadeAnimation(),
+        'visibility': (context) => const VisibilityAnimation(),
       },
       home: const HomeScreen(),
     );
