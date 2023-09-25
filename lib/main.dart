@@ -6,6 +6,8 @@ import 'package:flutter_animations/screens/implicit-animations/opacity_animation
 import 'package:flutter_animations/screens/implicit-animations/size_animation.dart';
 import 'package:flutter_animations/screens/implicit-animations/visibility_animation.dart';
 import 'package:flutter_animations/screens/implicit_animations.dart';
+import 'package:flutter_animations/screens/tween-animations/position_tween.dart';
+import 'package:flutter_animations/screens/tween-animations/size_tween.dart';
 import 'package:flutter_animations/screens/tween_animations.dart';
 
 void main() {
@@ -30,6 +32,8 @@ class MyApp extends StatelessWidget {
         'size': (context) => const SizeAnimation(),
         'crossfade': (context) => const CrossFadeAnimation(),
         'visibility': (context) => const VisibilityAnimation(),
+        'position': (context) => const PositionTweenAnimation(),
+        'size-tween': (context) => const SizeTweenAnimation(),
       },
       home: const HomeScreen(),
     );
