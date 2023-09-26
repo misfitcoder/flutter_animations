@@ -30,6 +30,14 @@ class TweenAnimation extends StatelessWidget {
             title: 'Color Tween',
             route: 'color',
           ),
+          TweenItem(
+            title: 'Rotation Tween',
+            route: 'rotation',
+          ),
+          TweenItem(
+            title: 'Scale Tween',
+            route: 'scale',
+          ),
         ],
       ),
     );

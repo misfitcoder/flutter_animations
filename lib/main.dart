@@ -8,6 +8,8 @@ import 'package:flutter_animations/screens/implicit-animations/visibility_animat
 import 'package:flutter_animations/screens/implicit_animations.dart';
 import 'package:flutter_animations/screens/tween-animations/color_tween.dart';
 import 'package:flutter_animations/screens/tween-animations/position_tween.dart';
+import 'package:flutter_animations/screens/tween-animations/rotation_tween.dart';
+import 'package:flutter_animations/screens/tween-animations/scale_tween.dart';
 import 'package:flutter_animations/screens/tween-animations/size_tween.dart';
 import 'package:flutter_animations/screens/tween_animations.dart';
 
@@ -36,6 +38,8 @@ class MyApp extends StatelessWidget {
         'position': (context) => const PositionTweenAnimation(),
         'size-tween': (context) => const SizeTweenAnimation(),
         'color': (context) => const ColorTweenAnimation(),
+        'rotation': (context) => const RotaionTweenAnimation(),
+        'scale': (context) => const ScaleTweenAnimation(),
       },
       home: const HomeScreen(),
     );
