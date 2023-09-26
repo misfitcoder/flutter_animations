@@ -8,31 +8,36 @@ class SizeTweenAnimation extends StatefulWidget {
 }
 
 class _SizeTweenAnimationState extends State<SizeTweenAnimation> {
-  double width = 150.0;
-  double height = 150.0;
+  double width = 200.0;
+  double height = 200.0;
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: TweenAnimationBuilder<double>(
-        tween: Tween<double>(
-          begin: 0.0,
-          end: 1.0,
-        ),
-        duration: const Duration(seconds: 1),
-        builder: (context, value, child) {
-          final currentWidth = width * value;
-          final currentHeight = height * value;
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Size Tween'),
+      ),
+      body: Center(
+        child: TweenAnimationBuilder<double>(
+          tween: Tween<double>(
+            begin: 0.0,
+            end: 1.0,
+          ),
+          duration: const Duration(seconds: 1),
+          builder: (context, value, child) {
+            final currentWidth = width * value;
+            final currentHeight = height * value;
 
-          return Container(
-            width: currentWidth,
-            height: currentHeight,
-            decoration: BoxDecoration(
-              color: Colors.teal,
-              borderRadius: BorderRadius.circular(10),
-            ),
-          );
-        },
+            return Container(
+              width: currentWidth,
+              height: currentHeight,
+              decoration: BoxDecoration(
+                color: Colors.teal,
+                borderRadius: BorderRadius.circular(10),
+              ),
+            );
+          },
+        ),
       ),
     );
   }

@@ -24,7 +24,11 @@ class TweenAnimation extends StatelessWidget {
           ),
           TweenItem(
             title: 'Size Tween',
-            route: 'size',
+            route: 'size-tween',
+          ),
+          TweenItem(
+            title: 'Color Tween',
+            route: 'color',
           ),
         ],
       ),
